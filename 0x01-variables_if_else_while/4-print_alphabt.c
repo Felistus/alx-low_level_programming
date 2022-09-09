@@ -5,12 +5,11 @@
  */
 int main(void)
 {
-	char c, p;
+	char c;
 
-	for (c = 'A'; c <= 'Z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		p = tolower(c);
-		if (p != 'q' && p != 'e')
+		if (c != 'q' && c != 'e')
 			putchar(p);
 	}
 	putchar('\n');
