@@ -5,9 +5,10 @@
  */
 int main(void)
 {
-	int num = 10, i = 0;
+	int num = 10;
+	int i = 0;
 
-	while(i < num) 
+	while (i < num)
 	{
 		printf("%d", i);
 		i++;
