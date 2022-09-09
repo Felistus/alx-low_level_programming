@@ -5,8 +5,7 @@
  */
 int main(void)
 {
-	char c;
-	for (c = "a"; c <= "z"; ++c){
+	for (int c = "a"; c <= "z"; c++){
 		putchar(c);
 	}
 	return (0);
