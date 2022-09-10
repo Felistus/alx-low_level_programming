@@ -12,7 +12,6 @@ int main(void)
 	{
 		putchar(lowCase);
 	}
-	
 	for (upCase = 'A'; upCase <= 'Z'; upCase++)
 	{
 		putchar(upCase);
