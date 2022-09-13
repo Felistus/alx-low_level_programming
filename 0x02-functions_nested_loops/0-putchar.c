@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /**
  * main - prints "_putchar" to the output
  * Return: 0
