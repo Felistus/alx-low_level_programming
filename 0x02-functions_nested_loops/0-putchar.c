@@ -5,6 +5,13 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char *c = "_putchar";
+
+	while (*c)
+	{
+		_putchar(*c);
+		c++;
+	}
+	_putchar('\n');
 	return (0);
 }
