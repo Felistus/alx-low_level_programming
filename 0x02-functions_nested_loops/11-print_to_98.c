@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - prints all numbers from 0-98
  * @n: number limit
