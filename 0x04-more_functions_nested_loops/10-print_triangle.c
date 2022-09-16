@@ -9,12 +9,16 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (col = 1; col <= size; cpol++)
+		for (col = 1; col <= size; col++)
 		{
 			for (row = size - col; row > 0; row--)
 				_putchar(' ');
 			for (row = 0; row < col; row++)
 				_putchar('#');
+
+			if (col == size)
+				continue;
+
 			_putchar('\n');
 		}
 	}
