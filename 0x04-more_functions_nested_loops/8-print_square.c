@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * print_square - prints squares
  * @size: size of square
  */
+
 void print_square(int size)
 {
 	int col, row;
