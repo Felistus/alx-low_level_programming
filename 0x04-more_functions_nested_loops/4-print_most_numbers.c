@@ -4,9 +4,9 @@
  */
 void print_most_numbers(void)
 {
-	int num = 0;
+	int num;
 
-	while (num <= 99)
+	for (num = '0'; num <= '99'; num++)
 	{
 		if (num != 2 && num != 4)
 			_putchar(num);
