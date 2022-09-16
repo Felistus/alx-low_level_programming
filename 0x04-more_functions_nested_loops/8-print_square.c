@@ -20,9 +20,11 @@ void print_square(int size)
 			 * if (col == (size - 1))
 			 *	continue;
 			 */
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
