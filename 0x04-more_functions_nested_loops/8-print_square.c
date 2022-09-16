@@ -5,14 +5,16 @@
  */
 void print_square(int size)
 {
+	int col, row;
+
 	if (size > 0)
 	{
-		for (int i = 0; i < size; i++)
+		for (col = 0; col < size; col++)
 		{
-			for (int j = 0; j < size; j++)
+			for (row = 0; row < size; row++)
 				_putchar('#');
 
-			if (i == (size - 1))
+			if (col == (size - 1))
 				continue;
 			_putchar('\n')
 		}
