@@ -8,7 +8,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j, p;
+	int i, j;
 
 	i = 0;
 	j = 0;
