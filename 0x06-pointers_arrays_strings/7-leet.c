@@ -6,10 +6,9 @@
  */
 char *leet(char *str)
 {
-	int i, j;
-	char toreplace[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i = 0, j;
+	char toreplace[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	i = 0;
 	while (str[i])
 	{
 		for (j = 0; j <= 7; j++)
