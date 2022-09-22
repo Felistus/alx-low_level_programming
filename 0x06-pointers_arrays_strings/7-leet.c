@@ -7,19 +7,18 @@
 char *leet(char *str)
 {
 	int i, j;
+	char toreplace[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	i = 0;
-	char char_toreplace[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
-
 	while (str[i])
 	{
 		for (j = 0; j <= 7; j++)
 		{
-			if (str[i] == char_toreplace[j] ||
-					str[i] - 32 == char_toreplace[j])
+			if (str[i] == toreplace[j] ||
+					str[i] - 32 == toreplace[j])
 				str[i] = j + '0';
 		}
-		i++
+		i++;
 	}
 	return (str);
 }
