@@ -11,7 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int foundLen = 0, sLen = 0, acceptLen = 0,
-	    i = 0, j = 0, currentIndex;
+	    i = 0, j = 0;
 
 	while (s[i] != '\0')
 	{
@@ -26,23 +26,16 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (i = 0; i < sLen; i++)
 	{
-		currentIndex = i;
 		for (j = 0; j < acceptLen; j++)
 		{
 			if (s[i] == accept[j])
-			{
 				foundLen++;
-				i++;
-			}
-			else
-			{
-				foundLen = 0;
-				i = currentIndex;
-				break;
-			}
 		}
 		if (foundLen == acceptLen)
+		{
+			foundLen++;
 			break;
+		}
 	}
 	return (foundLen);
 }
