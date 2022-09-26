@@ -10,8 +10,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int foundLen = 0, sLen = 0, acceptLen = 0,
-	    i = 0, j = 0;
+	int sLen = 0, i = 0;
+	unsigned int bytes = 0, acceptLen = 0, j = 0;
 
 	while (s[i] != '\0')
 	{
@@ -29,13 +29,13 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; j < acceptLen; j++)
 		{
 			if (s[i] == accept[j])
-				foundLen++;
+				bytes++;
 		}
-		if (foundLen == acceptLen)
+		if (bytes == acceptLen)
 		{
-			foundLen++;
+			bytes++;
 			break;
 		}
 	}
-	return (foundLen);
+	return (bytes);
 }
