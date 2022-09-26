@@ -7,11 +7,11 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, firstSum = 0, secondSum = 0;
+	int i, fSum = 0, sSum = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		firstSum += a[];
+		fSum += a[i];
 		a += size;
 	}
 
@@ -19,8 +19,9 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-	       secondSum += a[i];
-	       a -= size;
+		sSum += a[i];
+		a -= size;
 	}
-	printf("%d, %d\n", firstSum, secondSum);
+
+	printf("%d, %d\n", fSum, sSum);
 }
