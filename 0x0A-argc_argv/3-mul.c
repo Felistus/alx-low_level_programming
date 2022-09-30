@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers passed as arguments
  * @argc: number of arguments
@@ -11,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, product;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
