@@ -34,7 +34,7 @@ int count_words(char *str)
 		if (*(str + i) != ' ')
 		{
 			words++;
-			i += word__len(str + i);
+			i += word_len(str + i);
 		}
 	}
 	return (words);
