@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
-* _error_handler - A function to handle error and exit
-* with exit code 98
-*
-*/
+ * _error_handler - A function to handle error and exit
+ * with exit code 98
+ *
+ */
 
 void _error_handler(void)
 {
-printf("Error\n");
-exit(98);
+	printf("Error\n");
+	exit(98);
 }
 
 /**
