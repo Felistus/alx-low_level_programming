@@ -45,7 +45,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	smoove->name = i;
 	smoove->age = age;
-	smoove->owner = owner;
+	smoove->owner = j;
 
 	return (smoove);
 }
