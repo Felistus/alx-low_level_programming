@@ -1,7 +1,7 @@
 #ifndef VARIADIC_FUNCTION_H
 #define VARIADIC_FUNCTION_H
 
-#include <stdarg>
+#include <stdarg.h>
 #include <stdio.h>
 
 int _putchar(char c);
