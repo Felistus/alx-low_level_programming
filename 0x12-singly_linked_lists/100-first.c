@@ -1,5 +1,5 @@
 #include <stdlib.h>
-void __attribute__((constructor)) hare(void);
+void __attribute__((constructor)) hare_tortoise(void);
 /**
  * hare_tortoise - prints a string before the
  * main function is executed
