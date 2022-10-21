@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 void __attribute__((constructor)) hare_tortoise(void);
 /**
  * hare_tortoise - prints a string before the
