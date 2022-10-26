@@ -8,23 +8,13 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t nodeToReturn;
-	unsigned int count = 0;
-	int len;
+	unsigned int node;
 
-	len = size_t listint_len(const listint_t *head);
-
-	if (index < 0 || index > (len - 1))
-		return (NULL);
-
-	while (*head)
+	for (node = 0; node < index; node++)
 	{
-		if (count == index)
-		{
-			nodeToReturn = *head;
-			break;
-		}
-		*head = (*head)->next;
+		if (head == NULL)
+			return (NULL);
+		head = head->next;
 	}
-	return (nodeToReturn);
+	return (head);
 }
